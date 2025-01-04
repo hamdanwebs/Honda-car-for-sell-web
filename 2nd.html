@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Car - Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+header.hero {
+    background-image: url('https://via.placeholder.com/1600x600');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.hero .btn {
+    background-color: #ff4f00;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e74c00;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.car-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.car-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+.car-info h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.car-info ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.car-info li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.features {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+
+    .details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .car-info h2 {
+        font-size: 2em;
+    }
+
+    .features h2 {
+        font-size: 2.2em;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+}
+
+</style>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Honda Civic 2025</h1>
+            <p>Drive the future. Experience the latest in performance, safety, and style.</p>
+            <a href="#details" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Car Details Section -->
+    <section id="details" class="details">
+        <div class="car-images">
+            <img src="Front-Side.jpg" alt="Honda Civic" class="car-image">
+        </div>
+        <div class="car-info">
+            <h2>Honda Civic 2025</h2>
+            <p>The Honda Civic has been redesigned to deliver a powerful, dynamic driving experience with modern technology and efficiency.</p>
+            <ul>
+                <li><strong>Engine:</strong> 2.0L Turbocharged</li>
+                <li><strong>Power:</strong> 180 hp</li>
+                <li><strong>Fuel Economy:</strong> 30 MPG City / 38 MPG Highway</li>
+                <li><strong>Transmission:</strong> CVT (Continuously Variable Transmission)</li>
+            </ul>
+            <a href="https://www.honda.com" class="btn">Visit Honda Official Site</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Features</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h3>Advanced Safety</h3>
+                <p>With Honda Sensing™, drive with confidence thanks to features like Collision Mitigation Braking System™ (CMBS™) and Lane Keeping Assist.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Infotainment</h3>
+                <p>The Civic comes with a 7-inch display, Apple CarPlay™ & Android Auto™ integration, and available navigation for seamless connectivity.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Fuel Efficiency</h3>
+                <p>Stay on the road longer with exceptional fuel efficiency, making your journeys both affordable and enjoyable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Honda Motor Co., Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
